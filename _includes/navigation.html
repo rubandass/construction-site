@@ -10,15 +10,16 @@
         <ul class="navbar-nav mr-auto">
             {% for item in site.data.navigation %}
             <li class="nav-item">
-                <a href="{{ item.link }}" {% if page.url == item.link %} class="nav-link active-menu" {% else %}
-                    class="nav-link" {% endif %}>
+                <a href="{{ item.link }}" {% if page.url == item.link %} class="nav-link active-menu {{ item.class }}"
+                    {% else %} class="nav-link {{ item.class }}" {% endif %}>
 
                     {{ item.name }}
                 </a>
             </li>
             {% endfor %}
 
-            <li class="nav-item dropdown">
+
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Dropdown
@@ -29,7 +30,36 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle language-change" href="#" id="language-selection" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                        <img class="language" src="/assets/images/english.png" alt="English">
+                        <span>English</span>
+                    </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="en" href="#">
+                        <img class="language" src="/assets/images/english.png" alt="English">
+                        English
+                    </a>
+                    <a class="dropdown-item" id="fr" href="#">
+                        <img class="language" src="/assets/images/french.png" alt="French">
+                        French
+                    </a>
+                    <a class="dropdown-item" id="md" href="#">
+                        <img class="language" src="/assets/images/madagascar.png" alt="Madagascar">
+                        Madagascar
+                    </a>
+
+                </div>
             </li>
         </ul>
+
     </div>
 </nav>
+
+<script src="/assets/js/script.js"></script>

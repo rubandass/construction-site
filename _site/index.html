@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 </head>
 
 <body class="container">
@@ -31,30 +31,30 @@
         <ul class="navbar-nav mr-auto">
             
             <li class="nav-item">
-                <a href="/"  class="nav-link active-menu" >
+                <a href="/"  class="nav-link active-menu home"
+                    >
 
                     Home
                 </a>
             </li>
             
             <li class="nav-item">
-                <a href="/projects.html" 
-                    class="nav-link" >
+                <a href="/projects.html"  class="nav-link our-projects" >
 
                     Our Projects
                 </a>
             </li>
             
             <li class="nav-item">
-                <a href="/about.html" 
-                    class="nav-link" >
+                <a href="/about.html"  class="nav-link about-us" >
 
                     About Us
                 </a>
             </li>
             
 
-            <li class="nav-item dropdown">
+
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Dropdown
@@ -65,12 +65,41 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle language-change" href="#" id="language-selection" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                        <img class="language" src="/assets/images/english.png" alt="English">
+                        <span>English</span>
+                    </span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" id="en" href="#">
+                        <img class="language" src="/assets/images/english.png" alt="English">
+                        English
+                    </a>
+                    <a class="dropdown-item" id="fr" href="#">
+                        <img class="language" src="/assets/images/french.png" alt="French">
+                        French
+                    </a>
+                    <a class="dropdown-item" id="md" href="#">
+                        <img class="language" src="/assets/images/madagascar.png" alt="Madagascar">
+                        Madagascar
+                    </a>
+
+                </div>
             </li>
         </ul>
+
     </div>
 </nav>
+
+<script src="/assets/js/script.js"></script>
     <div class="container">
-    <h2>Home</h2>
+    <h2 class="home">Home</h2>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>

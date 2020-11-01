@@ -1,6 +1,9 @@
 - name: Home
+  class: home
   link: /
 - name: Our Projects
+  class: our-projects
   link: /projects.html
 - name: About Us
+  class: about-us
   link: /about.html
