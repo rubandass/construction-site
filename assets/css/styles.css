@@ -27,18 +27,18 @@ a:hover {
   border: solid #14bbbb;
 }
 
-img {
-  vertical-align: middle;
-}
-
 img.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 400px;
-  width: auto;
+  width: 800px;
 }
 
+.cover {
+  object-fit: cover;
+  object-position: top;
+}
 /* Next & previous buttons */
 .prev,
 .next {

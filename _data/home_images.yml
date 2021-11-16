@@ -1,0 +1,6 @@
+- name: home1
+  class: active
+- name: home2
+  class: ""
+- name: home3
+  class: ""
